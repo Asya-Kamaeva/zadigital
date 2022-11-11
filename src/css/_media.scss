@@ -1,0 +1,38 @@
+
+@mixin desc {
+    @media screen and (max-width: 1024px) {
+      @content;
+    }
+}
+  
+@mixin tablets {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+  
+@mixin phones {
+    @media screen and (max-width: 480px) {
+        @content;
+    }
+}
+
+//для IE
+
+@mixin ie{
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      @content;
+   }
+}
+  
+@mixin ie-phones{
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width: 480px) {
+        @content;
+    }
+}
+  
+@mixin ie-tablets{
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width: 768px) {
+        @content;
+    }
+}

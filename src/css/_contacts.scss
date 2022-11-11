@@ -1,0 +1,141 @@
+.contacts{
+    background: url(img/bg-contacts.jpeg);
+    background-position-x: center;
+
+    &__block{
+        background-color: #efefef;
+    }
+
+    &__content{
+        padding-top: 10%;
+        padding-bottom: 10%;
+        
+    }
+
+    &__title{
+        text-align: center;
+        margin-bottom: 2%;
+        font-size: 35px;
+
+        @include tablets{
+            font-size: 32px;
+        }
+
+        @include phones{
+            font-size: 26px;
+            font-weight: 600;
+        }
+
+    }
+
+    &__desc{
+        text-align: center;
+        margin-bottom: 8%;
+        font-size: 16px;
+        font-weight: 500;
+
+        @include tablets{
+            font-size: 15px;
+        }
+    }
+
+    &__container{
+        display: flex;
+        justify-content: space-between;
+
+        @include tablets{
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__part{
+        width: 30%;
+
+        @include desc{
+            width: 38%;
+        }
+
+        @include tablets{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        @include phones{
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &_block{
+            @include tablets{
+                width: 42%;
+            }
+
+            @include phones{
+                width: 90%;
+            }
+        }
+    }
+
+    &__capture{
+        margin-bottom: 8%;
+        font-size: 24px;
+        font-weight: 600;
+
+        @include tablets{
+            font-size: 22px;
+        }
+        @include phones{
+            margin-bottom: 6%;
+        }
+    }
+
+    &__list{
+        margin-bottom: 8%;
+    }
+
+    &__row{
+        display: flex;
+        margin-bottom: 5%;
+        align-items: center;
+    }
+
+    &__icon{
+        width: 42px;
+        font-size: 28px;
+        color: #ff4d03;
+        font-family: Font Awesome\ 5 Free;
+        font-weight: 900;
+
+        @include phones{
+            font-size: 26px;
+        }
+
+        &_phone{
+            &:before{
+                content: "\f3cd";
+            }
+        }
+        &_email{
+            font-weight: 400;
+            &:before{
+                content: "\f0e0";
+            }
+        }
+        &_map{
+            &:before{
+                content: "\f3c5";
+            }
+        }
+    }
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__value{
+        font-weight: 500;
+        margin-bottom: 3%;
+    }
+}

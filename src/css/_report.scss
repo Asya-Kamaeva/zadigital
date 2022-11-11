@@ -1,0 +1,76 @@
+.report{
+    background-color: #f1c23e;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    color: #fff;
+
+    @include desc{
+        padding-top: 60px;
+        padding-bottom:60px;
+    }
+
+    @include tablets{
+        padding-top: 40px;
+        padding-bottom:40px;
+    }
+    @include phones{
+        padding-top: 35px;
+        padding-bottom:35px;
+    }
+
+    &__content{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        @include tablets{
+            flex-direction: column;
+        }
+
+    }
+
+    &__title{
+        max-width: 72%;
+        font-size: 30px;
+        line-height: 38px;
+
+        @include desc{
+            font-size: 28px;
+        }
+
+        @include tablets{
+            max-width: 100%;
+            text-align: center;
+            font-size: 26px;
+            margin-bottom:3%;
+        }
+        @include phones{
+            font-size: 24px;
+            line-height: 30px;
+            font-weight: 400;
+        }
+    }
+
+    &__btn{
+        background-color: #ff4d03;
+        text-transform: uppercase;
+        padding: 14px 44px;
+        letter-spacing: 0.03em;
+        border-radius: 30px;
+        font-size: 13px;
+        white-space: nowrap;
+
+        &:hover{
+            color: #000;
+            background-color: #fff;
+            transition: 0.3s;
+        }
+
+        @include desc{
+            padding: 14px 34px;
+        }
+        @include phones{
+            font-weight: 500;
+        }
+    }
+}

@@ -1,0 +1,97 @@
+.hamburger {
+    z-index: 102;
+    height: auto;
+    position: relative;
+    width: 30px;
+    height: 22px;
+    display: none;
+    align-items: center;
+    // opacity: 0.8;
+    cursor: pointer;
+    margin-right: 30px;
+  
+    @include tablets{
+      display: flex;
+    }
+
+    @include phones{
+      width: 26px;
+      height: 20px;
+     margin-right: 10px;
+    }
+
+    &:before {
+      bottom: 100%;
+      margin-bottom: 4px;
+      content: "";
+      display: block;
+      width: 100%;
+      height: 2px;
+      top: 0;
+      background: #fff;
+      position: absolute;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+    &:after {
+      bottom: 0;
+      margin-top: 4px;
+      content: "";
+      display: block;
+      width: 100%;
+      height: 2px;
+      background: #fff;
+      position: absolute;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+   
+  
+  
+  
+    &__menu {
+      width: 100%;
+      height: 2px;
+      background-color: #fff;
+      border-radius: 10px;
+      display: block;
+      opacity: 1;
+      transition: 0.3s;
+      position: absolute;
+      top: 10px;
+  
+    }
+  
+    &_active {
+      z-index: 102;
+  
+  
+  
+      &:before {
+        content: "";
+        transform: rotate(45deg);
+        top: 9px;
+        transition: 0.3s;
+
+        @include phones{
+          top: 7px;
+        }
+  
+      }
+  
+      &:after {
+        content: "";
+        transform: rotate(-45deg);
+        bottom: 11px;
+        transition: 0.3s;
+  
+      }
+  
+      .hamburger__menu {
+        opacity: 0;
+        transition: 0.3s;
+      }
+  
+  
+    }
+  }

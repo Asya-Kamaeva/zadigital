@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        include ../pug/components/head.pug
+        title ZaDigital - агентство
+    body
+        wrapper
+            
+            include ../pug/components/scroll-up.pug
+
+            section.general
+
+                header.header
+                    include ../pug/components/header.pug
+                 
+                section.slider
+                    .slider__block(id="slider")       
+                        .slider__part(id="sliderPart")
+                            .slider__control.slider__control_left
+                                .slider__control_prev
+                            ul.slider__list
+                                li.slider__item.slider__active
+                                    img(src="img/slide-bg-1.jpg", alt="").slider__bg
+                                    .slider__unit
+                                        .container 
+                                            .slider__content
+                                                .slider__left
+                                                    h2.slider__title.animate.animate__two.animate__fadeInDown <span>SEO traffic</span> is<br>more likely to convert
+                                                    p.slider__desc.animate.animate__three.animate__fadeInLeft As your click-through-rate rises, your website's time on site will likely increase as well. This is how long your website visitors are staying.
+                                                    .slider__btn.animate.animate__four.animate__fadeInUp
+                                                        a(href="#").slider__link all services
+                                                        a(href="#").slider__link.slider__link_red get started
+                                                .slider__right.animate.animate__one.animate__fadeInRight
+                                                    img(src="img/slide-1.png", alt="").slider__img
+                                     
+                                li.slider__item 
+                                    img(src="img/slide-bg-2.jpg", alt="").slider__bg
+                                    .slider__unit
+                                        .container 
+                                            .slider__content.slider__content_reverse
+                                                .slider__right.animate.animate__one.animate__fadeInRight
+                                                    img(src="img/slide-2.png", alt="").slider__img
+                                                .slider__left
+                                                    h2.slider__title.animate.animate__two.animate__fadeInDown Growing you<br><span> awareness</span> and equity
+                                                    p.slider__desc.animate.animate__three.animate__fadeInLeft As your click-through-rate rises, your website's time on site will likely increase as well. This is how long your website visitors are staying.
+                                                    .slider__btn.animate.animate__four.animate__fadeInUp
+                                                        a(href="#").slider__link all services
+                                                        a(href="#").slider__link.slider__link_red get started
+                                   
+                                li.slider__item 
+                                    img(src="img/slide-bg-3.jpg", alt="").slider__bg
+                                    .slider__unit
+                                        .container 
+                                            .slider__content
+                                                .slider__left
+                                                    h2.slider__title.animate.animate__two.animate__fadeInDown <span>SEO traffic</span> is<br>more likely to convert
+                                                    p.slider__desc.animate.animate__three.animate__fadeInLeft As your click-through-rate rises, your website's time on site will likely increase as well. This is how long your website visitors are staying.
+                                                    .slider__btn.animate.animate__four.animate__fadeInUp
+                                                        a(href="#").slider__link all services
+                                                        a(href="#").slider__link.slider__link_red get started
+                                                .slider__right.animate.animate__one.animate__fadeInRight
+                                                    img(src="img/slide-3.png", alt="").slider__img
+                                
+                            .slider__control.slider__control_right
+                                .slider__control_next
+
+            section.services
+                .container 
+                    .services__content 
+                        ul.services__list 
+                            li.services__item 
+                                .services__img 
+                                    img(src="img/service1.png", alt="service1")
+                                .services__title SEO Performance
+                                p.services__desc Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto magni odit, illo quis mollitia nam quam vero quos sint nulla.
+                            li.services__item 
+                                .services__img 
+                                    img(src="img/service2.png", alt="service2")
+                                .services__title Web Analytics
+                                p.services__desc Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem odio suscipit et iste est qui blanditiis! Autem reprehenderit numquam cupiditate?
+                            li.services__item 
+                                .services__img 
+                                    img(src="img/service3.png", alt="service3")
+                                .services__title Email Marketing
+                                p.services__desc Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit harum, atque eligendi corrupti consequuntur beatae doloremque ab vitae? Sed, consequuntur.
+                            li.services__item 
+                                .services__img 
+                                    img(src="img/service4.png", alt="service4")
+                                .services__title Speed Optimization
+                                p.services__desc Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta dolore doloremque reiciendis repellendus, reprehenderit harum libero consequuntur at suscipit nisi.
+                        h2.services__capture The key benefits of SEO, will blow your mind
+                        p.services__text.services__desc  SEO offers a number of advantages to small business owners. Every business needs to invest in search engine optimization. Search engine optimization is the process of optimizing your website to maximize organic traffic from
+                            search engines. For starters, SEO will help you create a better, faster and friendlier website for users.
+            
+            section.strategy
+                .container 
+                    .strategy__content 
+                        .strategy__left 
+                            .strategy__slider 
+                                .strategy__slide 
+                                    img(src="img/strategy-img.png", alt="")
+                                .strategy__slide 
+                                    img(src="img/strategy-img.png", alt="")
+                                
+                          
+                        .strategy__right 
+                            .strategy__prev Developing Your Digital
+                            h3.strategy__title Marketing Strategy
+                            p.strategy__desc You can talk to your friends and family on social media. You can search for your favorite content on Google or YouTube. You can read and learn from blogs you find. And you can check your email. And, most importantly, you can spend your money!
+                            ol.strategy__list 
+                                li.strategy__item Build Your Customer Avatar
+                                li.strategy__item Grow Awareness & Visibility
+                                li.strategy__item Drive Website Traffic
+                                li.strategy__item Convert Traffic
+                                li.strategy__item Increase Conversion Rate
+
+
+                            a(href="#").strategy__btn Book Now
+
+
+
+            section.features
+                .container 
+                    .features__content 
+                        h3.features__title Our Service
+                        p.features__desc Traffic on search engines is the best traffic.
+                        ul.features__list 
+                            li.features__item
+                                .features__img 
+                                    img(src="img/f6.png", alt="")
+                                h3.features__capture Target Strategy
+                                .features__text But I must explain to you how all this mistaken idea of ​​denouncing pleasure and praising pain was born.
+                            li.features__item
+                                .features__img 
+                                    img(src="img/f7.png", alt="")
+                                h3.features__capture Web Analytics
+                                .features__text But I must explain to you how all this mistaken idea of ​​denouncing pleasure and praising pain was born.
+                            li.features__item
+                                .features__img 
+                                    img(src="img/f8.png", alt="")
+                                h3.features__capture Monitoring Ranking
+                                .features__text But I must explain to you how all this mistaken idea of ​​denouncing pleasure and praising pain was born.
+                            li.features__item
+                                .features__img 
+                                    img(src="img/f9.png", alt="")
+                                h3.features__capture Code Optimization
+                                .features__text But I must explain to you how all this mistaken idea of ​​denouncing pleasure and praising pain was born.
+                            li.features__item
+                                .features__img 
+                                    img(src="img/f10.png", alt="")
+                                h3.features__capture SEO Support
+                                .features__text But I must explain to you how all this mistaken idea of ​​denouncing pleasure and praising pain was born.
+                            li.features__item
+                                .features__img 
+                                    img(src="img/f11.png", alt="")
+                                h3.features__capture Email Marketing
+                                .features__text But I must explain to you how all this mistaken idea of ​​denouncing pleasure and praising pain was born.
+                
+            section.statistics 
+                .container
+                    .statistics__block
+                        .statistics__left
+                            .statistics__content 
+                                p.statistics__prev The Benefit Of Increased
+                                h3.statistics__title Visibility In Search Engines
+                                p.statistics__text The most commonly known advantage to be seen in SEO is an obvious increased visibility in search engines. TO BE CLEAR, fatrabbit CREATIVE holds fast to the position that an increased visibility in search engines due to proper SEO is only a benefit if there is a measurable ROI in after a given period of time.
+                                ul.statistics__list 
+                                    li.statistics__item 
+                                        .statistics__number <span id="num1">12</span>k
+                                        .statistics__desc Happy Client
+                                    li.statistics__item 
+                                        .statistics__number <span id="num2">1450</span>
+                                        .statistics__desc Project Submitted
+                                    li.statistics__item 
+                                        .statistics__number <span id="num3">100</span>%
+                                        .statistics__desc Satisfaction
+                        .statistics__right 
+                            .statistics__img
+                                a(href="#").statistics__btn(id="video-btn")
+
+            section.overlay(id="overlay")
+                .overlay__content 
+                    a(href="#").overlay__close(id="close-overlay") ×
+                    .overlay__video 
+                        <iframe width="auto" height="auto" src="https://www.youtube.com/embed/BvNVJBiHqoo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            section.case 
+                .container 
+                    .case__content 
+                        h3.case__title Case Studies 
+                        p.case__desc Generating leads with social media marketing.
+                        ul.case__list 
+                            li.case__item 
+                                .case__img.case__img_red
+                                    img(src="img/case1.png", alt="case1")
+                                a(href="#").case__capture ThemeExpert Increases organic Traffic Revenue to 96%
+                            li.case__item 
+                                .case__img.case__img_green
+                                    img(src="img/case2.png", alt="case2")
+                                a(href="#").case__capture JoomShaper Captures $300,000 a Year in Organic Value
+                            li.case__item 
+                                .case__img.case__img_blue
+                                    img(src="img/case3.png", alt="case3")
+                                a(href="#").case__capture How Time Increased Key Search Traffic Over 45%
+
+
+            section.reviews
+                .container 
+                    .reviews__content.sim-slider
+                        h3.reviews__title Happy Client Says
+                        ul.reviews__list
+                            li.reviews__item.reviews__item_hidden
+                                p.reviews__text Lorem ipsum dolor sit amet, sed ut simul posidonium, at agam numquam euripidis eum. Nec et minimum consulatu, at pri commodo invenire, vim ex ullum impedit omittantur. Pro habeo sapientem te, ius latine regione alterumex. Viderer recusabo pro ad. Indoctum dignissim pro id,
+                                .reviews__signed 
+                                    .reviews__img 
+                                        img(src="img/reviews_photo.jpg", alt="").reviews__image
+                                    .reviews__block 
+                                        .reviews__name Robert Henson
+                                        .reviews__position Web Marketing Analyst
+                            li.reviews__item.reviews__item_hidden
+                                p.reviews__text 2Lorem ipsum dolor sit amet, sed ut simul posidonium, at agam numquam euripidis eum. Nec et minimum consulatu, at pri commodo invenire, vim ex ullum impedit omittantur. Pro habeo sapientem te, ius latine regione alterumex. Viderer recusabo pro ad. Indoctum dignissim pro id,
+                                .reviews__signed 
+                                    .reviews__img 
+                                        img(src="img/reviews_photo.jpg", alt="").reviews__image
+                                    .reviews__block 
+                                        .reviews__name 2Robert Henson
+                                        .reviews__position 2Web Marketing Analyst
+                            li.reviews__item.reviews__item_hidden
+                                p.reviews__text 3Lorem ipsum dolor sit amet, sed ut simul posidonium, at agam numquam euripidis eum. Nec et minimum consulatu, at pri commodo invenire, vim ex ullum impedit omittantur. Pro habeo sapientem te, ius latine regione alterumex. Viderer recusabo pro ad. Indoctum dignissim pro id,
+                                .reviews__signed 
+                                    .reviews__img 
+                                        img(src="img/reviews_photo.jpg", alt="").reviews__image
+                                    .reviews__block 
+                                        .reviews__name 3Robert Henson
+                                        .reviews__position 3Web Marketing Analyst
+                        
+                        ul.reviews__dots
+
+            section.report 
+                .container 
+                    .report__content 
+                        h3.report__title Want to measure your site performance for free?
+                        a(href="#").report__btn get free report 
+
+            section.blog 
+                .container 
+                    .blog__content 
+                        h3.blog__title Latest Blog
+                        p.blog__desc For the next generation of big businesses.
+                        ul.blog__list 
+                            li.blog__item 
+                                .blog__img 
+                                    img(src="img/blog-1.jpg", alt="blog1")
+                                .blog__unit 
+                                    a(href="#").blog__capture SEO pulls-in quality traffic
+                                    p.blog__text Ne sententiae constituam eam. Paulo omnes oblique sea ea, inani persius sea, ei exerci laudem recusabo eos.
+                                    .blog__row 
+                                        .blog__date 31 March 2018
+                                        a(href="#").blog__link
+                            li.blog__item 
+                                .blog__img 
+                                    img(src="img/blog-2.jpg", alt="blog2")
+                                .blog__unit 
+                                    a(href="#").blog__capture Now, here’s the good news.
+                                    p.blog__text Ne sententiae constituam eam. Paulo omnes oblique sea ea, inani persius sea, ei exerci laudem recusabo eos.
+                                    .blog__row 
+                                        .blog__date 31 March 2018
+                                        a(href="#").blog__link
+                            li.blog__item 
+                                .blog__img 
+                                    img(src="img/blog-3.jpg", alt="blog3")
+                                .blog__unit 
+                                    a(href="#").blog__capture They do not have enough time.
+                                    p.blog__text Ne sententiae constituam eam. Paulo omnes oblique sea ea, inani persius sea, ei exerci laudem recusabo eos.
+                                    .blog__row 
+                                        .blog__date 31 March 2018
+                                        a(href="#").blog__link
+                                
+            include ../pug/components/footer.pug
+
+                           
+                            
+                        
+
+
+
+        
+        script(src="main.js")
+    
+        
+
+                            
+
+
+
+
+
+
+
+
+                        
+
+
+
+
+            

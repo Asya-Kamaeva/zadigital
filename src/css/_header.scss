@@ -1,0 +1,38 @@
+.header{
+    height: 10vh;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    color: #fff;
+    background-color: transparent;
+    
+
+    @include tablets{
+        height: 8vh;
+    }
+    @include phones{
+        height: 10vh;
+    }
+
+    &__interior{
+        display: flex;
+        position: inherit;
+    }
+   
+    
+    &__content{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    &__fix{
+        position: fixed;
+        background-color: #08113c;
+        z-index: 30;
+        top: 0;
+       
+    }
+}

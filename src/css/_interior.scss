@@ -1,0 +1,74 @@
+.interior{
+    height: 400px;
+    background: url(img/bg-service.jpeg);
+    background-position-x: center;
+    color: #fff;
+
+    @include tablets{
+        height: 300px;
+    }
+    @include phones{
+        height: 250px;
+    }
+    
+    &__content{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include tablets{
+            margin-top: 50px;
+        }
+    }
+
+    &__title{
+        margin-bottom: 1.5%;
+        font-size: 40px;
+        font-weight: 600;
+
+        @include tablets{
+            font-size: 36px;
+        }
+
+        @include phones{
+            font-size: 30px;
+        }
+    }
+
+    &__breadcrumbs{
+        display: flex;
+        font-size: 14px;
+        font-weight: 500;
+
+    }
+
+    &__item{
+        margin-right: 10px;
+        &:before{
+            content: "|";
+            margin-right: 10px;
+            color: #fff;
+        }
+
+        &:first-child:before{
+            content: "";
+        }
+
+        &:hover{
+            color: #ff4d03;
+        }
+
+        &:last-child:hover{
+            color: #fff;
+            
+        }
+    }
+
+    &__link{
+
+        &_last{
+            cursor: text;
+        }
+    }
+}

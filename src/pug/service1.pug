@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        include ../pug/components/head.pug
+        title ZaDigital - Услуга 1
+    body
+        wrapper
+            
+            include ../pug/components/scroll-up.pug
+
+            section.interior
+
+                header.header.header__interior
+                    include ../pug/components/header.pug
+
+                .container
+                    .interior__content
+                        h1.interior__title Service Details
+                        ul.interior__breadcrumbs
+                            li.interior__item 
+                                a(href="/index.html").interior__link Home
+                            li.interior__item 
+                                a(href="#").interior__link Services 
+                            li.interior__item 
+                                a(href="#").interior__link.interior__link_last Service Details
+
+            section.process
+                .container
+                    h2.process__title More About Our SEO Services
+                    p.process__text Here at SEOKIT we are an SEO company that provides research-based and contemporary SEO services; we operate a range of our own subject-specific commercial websites and eCommerce sites. So, we know firsthand what a great feeling it is when organic Search Engine traffic starts delivering traffic growth, new business leads and online sales.
+                    h3.process__capture How much should you invest in SEO?
+                    p.process__text Typically a company should earmark between 5-10% of revenues to your overall sales and marketing initiatives; let’s say your revenues are $2.0m and you decide to invest 10% of that in sales and marketing which is $200,000.<br>We strongly recommend maintaining a sales resource (25%) to convert your larger sales (even if that is part time) and investing 25% in traditional marketing and the remaining $100,000 in the digital space; in this case we would recommend $40k on SEO, $40k on paid search and $20k on creating quality content. Our Genesis 30 Plan is ideally suited to this particular example. We publish a handy price guide for our Genesis Plans
+                    h3.process__capture How We Work?
+
+                    ul.process__block 
+                        li.process__unit.process__unit_1
+                            .process__step
+                                .process__head.process__head_1
+                                    .process__number 01
+                                    .process__part 
+                                        span.process__prev SEO
+                                        h3.process__name PROJECT BRIEF
+                                .process__body 
+                                    p.process__desc Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.
+                                    .process__img 
+                                        img(src="", alt="")
+                        li.process__unit.process__unit_2
+                            .process__step
+                                .process__head.process__head_2
+                                    .process__number 02
+                                    .process__part 
+                                        span.process__prev KEYWORD
+                                        h3.process__name RESEARCH
+                                .process__body 
+                                    p.process__desc Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.
+                                    .process__img 
+                                        img(src="", alt="")
+                        li.process__unit.process__unit_3
+                            .process__step
+                                .process__head.process__head_3
+                                    .process__number 03
+                                    .process__part 
+                                        span.process__prev IDENTIFY
+                                        h3.process__name COMPETITOR
+                                .process__body 
+                                    p.process__desc Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.
+                                    .process__img 
+                                        img(src="", alt="")
+                        li.process__unit.process__unit_4
+                            .process__step
+                                .process__head.process__head_4
+                                    .process__number 04
+                                    .process__part 
+                                        span.process__prev WEBSITE
+                                        h3.process__name SEO AUDIT
+                                .process__body 
+                                    p.process__desc Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.
+                                    .process__img 
+                                        img(src="", alt="")
+                        li.process__unit.process__unit_5
+                            .process__step
+                                .process__head.process__head_5
+                                    .process__number 05
+                                    .process__part 
+                                        span.process__prev ON/OFF
+                                        h3.process__name PAGE SEO
+                                .process__body 
+                                    p.process__desc Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.
+                                    .process__img 
+                                        img(src="", alt="")
+
+
+
+            include ../pug/components/footer.pug
+
+
+        script(src="main.js")

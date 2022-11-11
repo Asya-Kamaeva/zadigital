@@ -1,0 +1,26 @@
+.scroll-up{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 36px;
+    height: 36px;
+    border-radius: 3px;
+    background-color: #ff4d06;
+    color: #fff;
+    font-size: 16px;
+    z-index: 3;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: .3s;
+
+    &__icon{
+        font-family: "Font Awesome 5 Free";
+        font-weight: 600;
+
+        &:before{
+            content: "\f077";
+        }
+    }
+}

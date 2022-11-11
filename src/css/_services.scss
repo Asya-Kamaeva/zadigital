@@ -1,0 +1,120 @@
+.services{
+    padding-top: 10%;
+    padding-bottom: 8%;
+
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10%;
+        flex-wrap: wrap;
+
+        @include tablets{
+            justify-content: space-around;
+            margin-bottom: 8%;
+        }
+    }
+
+    &__item{
+        width: 22%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include desc{
+            width: 23%;
+        }
+
+        @include tablets{
+            width: 44%;
+            margin-bottom: 3%;
+        }
+
+        @include phones{
+            width: 100%;
+        }
+        
+    }
+
+    &__img{
+        @include tablets{
+            max-width: 110px;
+        }
+    }
+
+    &__title{
+        margin-bottom: 10%;
+        margin-top: 10%;
+        font-size: 22px;
+        line-height: 22px;
+        font-weight: 600;
+        transition: .3s;
+        text-align: center;
+        cursor: pointer;
+        min-height: 44px;
+
+        &:hover{
+            transition: .3s;  
+            color: #ff4d03;
+        }
+
+        @include desc{
+            font-size: 20px;
+        }
+
+        @include tablets{
+            margin-bottom: 5%;
+            margin-top: 5%;
+        }
+        @include phones{
+            min-height: inherit;
+            font-size: 18px;
+            margin-bottom: 3%;
+            margin-top: 3%;
+        }
+    }
+
+    &__desc{
+        font-size: 15px;
+        color: #595959;
+        line-height: 25px;
+        font-weight: 600;
+        text-align: center;
+
+        @include desc{
+            font-weight: 500;
+            line-height: 25px;
+        }
+
+        @include phones{
+            line-height: 24px;
+        }
+    }
+
+    &__capture{
+        text-align: center;
+        margin-bottom: 2%;
+        font-size: 30px;
+        line-height: 30px;
+        font-weight: 600;
+
+        @include tablets{
+            font-size: 26px;
+        }
+
+        @include phones{
+            font-size: 22px;
+            line-height: 26px;
+        }
+
+    }
+
+    &__text{
+        width: 70%;
+        margin-left: 15%;
+
+        @include tablets{
+            width: 100%;
+            margin-left: 0;
+        }
+    }
+}

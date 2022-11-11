@@ -1,0 +1,123 @@
+.features{
+    margin-top: 7%;
+    padding-bottom: 8%;
+
+    &__title{
+        font-size: 40px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 1%;
+
+        @include desc{
+            font-size: 35px;
+        }
+
+        @include phones{
+            font-size: 28px;
+        }
+    }
+
+    &__desc{
+        text-align: center;
+        margin-bottom: 4%;
+        font-size: 16px;
+        color: #5f5f5f;
+
+        @include phones{
+            font-weight: 400;
+        }
+    }
+
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item{
+        width: 33.3%;
+        padding: 4% 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &:nth-child(1){
+            background-color: #33ce9d;
+        }
+
+        &:nth-child(3){
+            background-color: #1ed9de;
+
+            @include tablets{
+                background-color: #fff;
+            }
+        }
+
+        &:nth-child(4){
+
+            @include tablets{
+                background-color: #1ed9de;
+            }
+        }
+
+        &:nth-child(5){
+            background-color: #ffd45c;
+        }
+
+        @include desc{
+            padding: 3% 2%;
+        }
+
+        @include tablets{
+            width: 50%;
+        }
+    }
+
+    &__img{
+        margin-bottom: 30px;
+
+        @include tablets{
+            margin-bottom: 20px;
+        }
+        @include phones{
+            margin-bottom: 10px;
+        }
+    }
+
+    &__capture{
+        margin-bottom: 5%;
+        font-size: 22px;
+        line-height: 25px;
+        font-weight: 600px;
+        font-family: 'Montserrat', sans-serif;
+
+        @include desc{
+            text-align: center;
+            font-size: 20px;
+        }
+
+        @include tablets{
+            margin-bottom: 3%;
+        }
+
+        @include phones{
+            font-size: 18px;
+            line-height: 22px;
+            min-height: 44px;
+        }
+    }
+
+    &__text{
+        font-size: 15px;
+        line-height: 27px;
+        color: #626262;
+        text-align: center;
+
+        @include desc{
+            font-weight: 500;
+            line-height: 25px;
+        }
+        @include phones{
+            line-height: 23px;
+        }
+    }
+}

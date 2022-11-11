@@ -1,0 +1,238 @@
+.footer{
+    background: url(img/footer-bg.jpg);
+    padding-top: 7%;
+    padding-bottom: 7%;
+    color: #acacac;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+
+    @include desc{
+        line-height: 22px;
+    }
+
+
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5%;
+        flex-wrap: wrap;
+    }
+
+    &__block{
+
+        &:first-child{
+            width: 45%;
+
+            @include tablets{
+                width: 100%;
+                margin-bottom: 5%;
+
+            }
+        }
+        width: 26%;
+
+        @include tablets{
+            width: 48%;  
+        }
+        @include phones{
+            width: 100%;
+            margin-bottom: 5%;
+        }
+    }
+
+    &__title{
+        margin-bottom: 5%;
+        font-size: 22px;
+        font-weight: 600;
+        color: #fff;
+
+        @include desc{
+            font-size: 20px;
+        }
+
+        @include tablets{
+            margin-bottom: 3%;
+        }
+    }
+
+    &__text{
+        margin-bottom: 5%;
+        
+        @include tablets{
+            margin-bottom: 3%;
+        }
+        
+    }
+
+    &__address, &__mail, &__phone, &__item{
+        &:before{
+            font-family: "Font Awesome 5 Free";
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+            margin-right: 12px;
+        }
+    }
+
+
+    &__address{
+        margin-bottom: 2%;
+
+        @include tablets{
+            margin-bottom: 1%;
+        }
+        
+        &:before{
+            content: "\f277"; 
+        }
+
+    }
+
+    &__mail{
+        margin-bottom: 2%;
+
+        @include tablets{
+            margin-bottom: 1%;
+        }
+        
+        &:before{
+            content: "\f0e0";
+        }
+
+    }
+
+    &__phone{
+        
+        &:before{
+            content: "\f095";
+        }
+    }
+
+    &__item{
+        margin-bottom: 2%;
+        transition: .3s;
+        &:hover{
+            color: #ff4d06;
+            transition: .3s;
+        }
+
+        &:hover::before{
+            color: #ff4d06;
+            transition: .3s;
+        }
+
+        &:before{
+            content: "\f0da";
+        }
+
+        @include tablets{
+            margin-bottom: 1%;
+        }
+    }
+
+    &__form{
+        margin-top: 8%;
+        margin-bottom: 10%;
+
+        @include tablets{
+            margin-top: 3%;
+            margin-bottom: 6%;
+        }
+    }
+
+    &__input{
+        padding: 8px 12px;
+        border: 1px solid #fff;
+        background: transparent;
+        color: #fff;
+        margin-bottom: 5px;
+
+    }
+
+    &__btn{
+        padding: 8px 12px;
+        border: 1px solid #fff;
+        background: #fff;
+        transition: .3s;
+
+        &:hover {
+            background-color: #ff4d06;
+            transition: .3s;
+            border-color: #ff4d06;
+            cursor: pointer;
+            color: #fff;
+        }
+
+
+    }
+
+    &__social{
+        display: flex;
+
+        &_item{
+            width: 35px;
+            height: 35px;
+            border-radius: 5%;
+            background-color: #fff;
+            margin-right: 6%;
+            transition: .3s;
+
+            @include tablets{
+                width: 30px;
+                height: 30px;
+            }
+
+            &:hover{
+                background-color: #ff4d06;
+                transition: .3s;
+            }
+
+            &:hover .footer__social_link{
+                color: #fff;
+                transition: .3s;
+            }
+        }
+
+        &_link{
+            width: 100%;
+            height: 100%;
+            color: #000;
+            transition: .3s;
+        }
+
+        &_fb, &_lk, &_yt{
+            &:before{
+                font-family: "Font Awesome\ 5 Brands";
+                font-size: 18px;
+                font-weight: 900;
+                
+                text-align: center;
+                display: block;
+                line-height: 35px;
+
+                @include tablets{
+                    line-height: 30px;
+                }
+            }
+        }
+
+        &_fb{
+            &:before{
+                content: "\f39e";
+            }
+        }
+
+        &_lk{
+            &:before{
+                content: "\f0e1"; 
+            }
+        }
+
+        &_yt{
+            &:before{
+                content: "\f167"; 
+            }
+        }
+    }
+}

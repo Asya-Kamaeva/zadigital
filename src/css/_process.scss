@@ -1,0 +1,297 @@
+.process{
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+    &__title{
+        margin-bottom: 2%;
+        font-size: 35px;
+        line-height: 45px;
+        font-weight: 500;
+
+        @include tablets{
+            font-size: 32px;
+            line-height: 38px;
+        }
+        @include tablets{
+            font-size: 26px;
+            line-height: 30px;
+        }
+    }
+
+    &__text{
+        margin-bottom: 2%;
+        font-size: 15px;
+        line-height: 27px;
+        color: #5F5F5F;
+        font-weight: 500;
+
+        @include tablets{
+            line-height: 25px;
+        }
+        @include phones{
+            line-height: 24px;
+        }
+    }
+
+    &__capture{
+        margin-bottom: 2%;
+        font-size: 28px;
+        line-height: 45px;
+        font-weight: 500;
+
+        @include tablets{
+            font-size: 26px;
+            line-height: 36px;
+        }
+        @include tablets{
+            font-size: 24px;
+            line-height:30px;
+        }
+    }
+
+    &__block{
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        align-items: flex-start;
+        padding-bottom: 50px;
+
+        @include tablets{
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &:after{
+            content: "";
+            position: absolute;
+            width: 1px;
+            height: 100%;
+            z-index: 5;
+            background-color: #bdbdbd;
+            left: 50%;
+        }
+
+    }
+
+    &__unit{
+        width: 50%;
+        padding-right: 4%;
+        padding-left: 4%;
+
+        @include tablets{
+            z-index: 7;
+            margin-top: 5%!important;
+            margin-bottom: 5%;
+            padding-left: 0;
+            padding-right: 0;
+            width: 80%;
+            max-width: 450px;
+        }
+        @include phones{
+            width: 100%;
+
+        }
+
+        
+        
+        &:nth-child(1){
+            margin-top: 50px;
+            @include desc{
+                padding-left: 0; 
+            }
+            @include tablets{
+                margin-top: 10%!important;
+            }
+        }
+        &:nth-child(2){
+            margin-top: 200px;
+            @include desc{
+                padding-right: 0; 
+            }
+        }
+        &:nth-child(3){
+            margin-top: -50px;
+            @include desc{
+                padding-left: 0; 
+            }
+        }
+        &:nth-child(4){
+            margin-top: 100px;
+            @include desc{
+                padding-right: 0; 
+            }
+        }
+        &:nth-child(5){
+            margin-top: -50px;
+            @include desc{
+                padding-left: 0; 
+            }
+        }
+        
+    }
+
+    &__step{
+        box-shadow: 0 1px 22px 4px rgba(0,0,0,0.07);
+        border: 1px solid rgba(191, 191, 191, 0.4);
+        
+    }
+
+    &__head{
+        font-weight: 500;
+        padding: 3% 3%;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        position: relative;
+
+       
+            &:before{
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 0;
+                border: 15px solid transparent;  
+
+                @include tablets{
+                    display: none;
+                }
+            }
+
+            &:after{
+                position: absolute;
+                content: "";
+                width: 9px;
+                height: 9px;
+                background-color: #bdbdbd;
+                border-radius: 9px;
+                box-shadow: 0px 0px 2px 8px #f7f7f7;
+                z-index: 6;
+                @include tablets{
+                    display: none;
+                }
+            }
+
+        &_1, &_3, &_5{
+            &:before{
+                left: 100%;
+                border-right-width: 0;
+            }
+            &:after{
+                left: 109%;
+                @include desc{
+                    left: 107.8%;
+                }
+            }
+        }
+        &_2, &_4{
+            &:before{
+                left: -15px;
+                border-left-width: 0;
+            }
+            &:after{
+                left: -10.5%;
+                @include desc{
+                    left: -9.7%;
+                }
+
+                @include tablets{
+                    left: -11.2%;
+                }
+            }
+        }
+
+        &_1{
+            background-color: #46b8e9;
+                &:before{
+                    border-left-color: #46b8e9;  
+                }
+        }
+        &_2{
+            background-color: #3ee9d1;
+            &:before{
+                border-right-color: #3ee9d1;  
+            }
+        }
+        &_3{
+            background-color: #ce43eb;
+            &:before{
+                border-left-color: #ce43eb;
+            }
+        }
+        &_4{
+            background-color: #4d92eb;
+            &:before{
+                border-right-color: #4d92eb;  
+            }
+        }
+        &_5{
+            background-color: #46b8e9;
+            &:before{
+                border-left-color: #46b8e9;
+            }
+        }
+    }
+
+    &__number{
+        font-size: 35px;
+        line-height: 35px;
+        font-weight: 600;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.17);
+        margin-right: 3%;
+
+        @include tablets{
+            font-size: 30px;
+        }
+        @include tablets{
+            font-size: 28px;
+            padding: 8px;
+        }
+    }
+
+    &__part{
+        letter-spacing: 2px;
+    }
+
+    &__prev{
+        font-size: 12px;
+    }
+
+    &__name{
+        font-size: 24px;
+        font-weight: 500;
+
+        @include tablets{
+            font-size: 22px;
+        }
+        @include tablets{
+            font-size: 20px;
+        }
+    }
+
+    &__body{
+        font-weight: 500;
+        padding: 3% 3%;
+        background-color: #fff;
+    }
+
+    &__desc{
+        margin-bottom: 3%;
+        font-size: 16px;
+        line-height: 26px;
+
+        @include tablets{
+            line-height: 25px;
+        }
+        @include phones{
+            line-height: 24px;
+            font-size: 15px;
+        }
+    }
+
+    &__img{
+        width: 100%;
+        height: 200px;
+        background-color: #bdbdbd;
+    }
+}

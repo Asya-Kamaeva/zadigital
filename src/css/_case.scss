@@ -1,0 +1,119 @@
+.case{
+    padding-top: 9%;
+    padding-bottom: 8%;
+
+    &__title{
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 1%;
+        text-align: center;
+
+        @include desc{
+            font-size: 35px;
+        }
+        @include phones{
+            font-size: 28px;
+        }
+    }
+
+    &__desc{
+        font-weight: 600;
+        color: #595959;
+        margin-bottom: 4%;
+        text-align: center;
+        letter-spacing: 0.2px;
+        font-size: 16px;
+
+        @include phones{
+            font-weight: 500;
+        }
+    }
+
+    &__list{
+        display: flex;
+        justify-content: space-between;
+
+        @include phones{
+            flex-wrap: wrap;
+        }
+    }
+
+    &__item{
+        width: 32%;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+
+        @include phones{
+            width: 100%;
+            margin-bottom: 3%;
+        }
+    }
+
+    &__img{
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 60px;
+        border-radius: 8px;
+
+        @include desc{
+            padding: 50px;
+            height: inherit;
+        }
+
+        @include tablets{
+            padding: 20px;
+        }
+
+        
+
+        &_red{
+            background-color: #950043;
+        }
+
+        &_green{
+            background-color: #77c04b;
+        }
+
+        &_blue{
+            background-color: #1487c1;
+        }
+    }
+
+    &__img img {
+        @include phones{
+            max-width: 180px;
+        }
+    }
+
+    &__capture{
+        display: block;
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 600;
+        text-align: center;
+        padding: 10% 5%;
+
+        &:hover{
+            color: #ff4d03;
+        }
+
+        @include desc{
+            font-size: 18px;
+            line-height: 28px;
+            padding: 10% 4%;
+        }
+        @include tablets{
+            font-size: 16px;
+            line-height: 24px;
+            padding: 8% 4%;
+        }
+        @include phones{
+            padding: 6% 4%;
+        }
+
+    }
+
+    
+}

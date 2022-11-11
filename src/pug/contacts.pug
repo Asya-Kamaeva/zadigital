@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        include ../pug/components/head.pug
+        title ZaDigital - Контакты
+    body
+        wrapper
+            
+            include ../pug/components/scroll-up.pug
+
+            section.interior.contacts
+
+                header.header.header__interior
+                    include ../pug/components/header.pug
+                
+                .container
+                    .interior__content
+                        h1.interior__title Contact Us
+                        ul.interior__breadcrumbs
+                            li.interior__item 
+                                a(href="index.html").interior__link Home
+                            li.interior__item 
+                                a(href="#").interior__link.interior__link_last Contact Us
+            
+            section.contacts__block
+                .container 
+                    .contacts__content 
+                        h2.contacts__title Get in Touch 
+                        p.contacts__desc Get in Touch With The SEOKIT.
+
+                        .contacts__container
+
+                            form.form
+                                .form__row 
+                                    input(type="text" placeholder="Name" name="name" required).form__input.form__cell
+                                    input(type="email" placeholder="Email" name="email" required).form__input.form__cell
+                                .form__row 
+                                    input(type="text" placeholder="Subject" name="subject" required).form__input.form__cell.form__input_long
+                                    input(type="text" placeholder="3 + 6 = ?" name="question" required).form__input.form__cell.form__input_shot
+                                textarea(name="message", rows="5", placeholder="Message" required).form__textarea.form__cell
+                                .form__checkbox
+                                    input(type="checkbox" name="checkbox" required).form__check
+                                    .form__text I agree with your 
+                                        a(href="#").form__link terms & conditions 
+                                button(type="submit" value="Send Message").form__btn.form__cell Send Message
+
+                            .contacts__part 
+                                .contacts__part_block
+                                    h3.contacts__capture Location 
+                                    ul.contacts__list
+                                        li.contacts__row 
+                                            .contacts__icon.contacts__icon_phone
+                                            .contacts__box 
+                                                span.contacts__value +81 436 9672 501
+                                                span.contacts__value +81 436 9672 501
+                                        li.contacts__row 
+                                            .contacts__icon.contacts__icon_email
+                                            .contacts__box 
+                                                span.contacts__value email@yandex.ru
+                                                span.contacts__value email@yandex.ru
+                                        li.contacts__row 
+                                            .contacts__icon.contacts__icon_map
+                                            .contacts__box 
+                                                span.contacts__value 1425, Bashundhara Complex
+                                                span.contacts__value Washington, Connecticut 65348
+                                .contacts__part_block
+                                    h3.contacts__capture Opening Time 
+                                    span.contacts__value Every day: 10:00am - 07:00pm
+
+
+
+
+
+                
+
+
+
+            include ../pug/components/footer.pug
+
+
+
+        script(src="main.js")
